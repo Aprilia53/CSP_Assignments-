@@ -1,4 +1,8 @@
-Name= "Aprilia"
+Name= "Aprilia"; 
 
-print("This is where i do my work,") 
+print("hello "+ Name +"!")
+
+animal= "cats"; 
+
+print("I like "+ animal + "!" ); 
 
