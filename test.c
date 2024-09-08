@@ -1,10 +1,10 @@
 #include <stdio.h> 
 
 int main(void){
-    printf("how are you?"); 
-    feeling= ("good"); 
-    printf("%s that's good. ");
-    return 0;
+   
+    int firstNumber= 56;
+    int printf("First number= %d" firstNumber); 
 
+    return 0; 
 
 } 
