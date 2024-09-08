@@ -1,11 +1,11 @@
 #include <stdio.h> 
 
-int main(void) { 
-     printf("Hello you. "); 
-    return 0; 
+int main() { 
+
+    int firstNumber = 76;
+    printf("firstNumber = %d", firstNumber); 
+
+    int 
+     return 0;  
 
 } 
-int main(void) {
-  printf("How are you?");
-  return 0; 
-}
