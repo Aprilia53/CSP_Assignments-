@@ -1,8 +1,7 @@
 #include <stdio.h> 
 
-int main() { 
 
-    int firstNumber = 76;
-    printf("firstNumber = %d", firstNumber); 
- return 0; 
-} 
+int myNum;
+ printf("type a number: \n");
+  scanf("%d", &myNum; );
+printf("your number is: %d", myNum; );
