@@ -1,8 +1,3 @@
-Name= "Aprilia"; 
-
-print("hello "+ Name +"!")
-
-animal= "cats"; 
-
-print("I like "+ animal + "!" ); 
-
+print('enter your name: ')
+name= input()
+print('hello, ' + name) 
