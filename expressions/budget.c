@@ -1,9 +1,16 @@
 #include <stdio.h> 
 int main() {
     
-   float income [7];
+   char income [7];
+   char utilities[9];
+   char groceries[9];
+   char car[9];
    printf("This is a budget calculator. \n how much do you make a month?\n");
-   fgets(income, sizeof(income), stdio); 
-   printf("you make %f ", income); 
+  scanf("%s", income);
+  printf("how much do your utilities cost?\n");
+  scanf("%s", utilities);
+   printf("you make %s\n", income); 
+   float spend[]= (float) income - (float) utilities;
+   printf("%s", spend) 
    return 0;
 }
