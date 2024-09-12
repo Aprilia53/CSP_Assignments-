@@ -1,7 +1,3 @@
-income=()
-utilities=() 
-groceries=() 
-car=() 
-print('This is a budget calculator. What is your income?')
-print('your income is,' + income ) 
-
+print('This is a budget calculator. What is your income? ') 
+income= input() 
+print('your income is', income ) 
