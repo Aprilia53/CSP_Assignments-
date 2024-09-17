@@ -1,23 +1,33 @@
-print("This is a budget calculator. What is your income?") 
+print("This is a budget calculator. What is your monthly income?") 
 income = input() 
-print("your income is", income ) 
+print("your monthly income is", income ) 
 
-print("How much are your rent each month? ")
+print("How much is your rent each month? ")
 rent= input() 
 
-print("How much are your utilities each month ")
+print("How much is your utilities each month?")
 utilities = input() 
 
 print("What is your monthly grocery price?") 
 groceries = input() 
-subtotalTwo =input(groceries-income)
-print("Your grocery price every year is", groceries) 
-print("Your income after groceries very year is", subtotalTwo)
-print("how much does does your car cost each year?")
-car=input()
-subtotalThree =input(car-income)
-print("your car cost", car, "each year. ")
-print("your income after your car each year is", subtotalThree)
-totalSubtotal =input(income-utilities-groceries-car)
-print("Your total income evey year after you pay for your essentials is", totalSubtotal)
+
+print("What is your monthly transportation price?") 
+transportation = input() 
+
+expenses=float(rent)+float(utilities)+float(groceries)+float(transportation) 
+print("your monthly expences are ", expenses)
+
+savings= income*(0.3) 
+print("Your monthly savings are", savings)
+
+spendingMoney= income*(0.1) 
+print("Your monthly spending money is ", spendingMoney )
+
+Rent= income*(0.2) 
+print("your monthly rent is", Rent) 
+
+
+ 
+
+
 print("Thank you for using budget calculator!")
