@@ -1,13 +1,16 @@
-def userInputs(): 
-     expences = income, rent, utilities, groceries, transportation
-     return f"How much is your {expences} each month?" 
-
-print("This is a budget calculator. ") 
-income = input()
+print("This is a budget calculator. What is your monthly income?") 
+income = input() 
+print("your monthly income is", income ) 
+print("How much is your rent each month? ")
 rent = input() 
+print("How much is your utilities each month?")
 utilities = input() 
+print("What is your monthly grocery price?") 
 groceries = input() 
+print("What is your monthly transportation price?") 
 transportation = input() 
+
+
 
 expenses = float(rent) + float(utilities) + float(groceries) + float(transportation)
 print("your monthly expences are ", expenses)
@@ -26,3 +29,8 @@ print("your transportation cost is", savings  (" percent of your monthly income"
 Expences = float(income) - float(expenses) 
 print("your expences are", Expences ("percent of your monthly income. ") )
 print("Thank you for using budget calculator!")
+
+def percent(type, amount):
+    per = amount/income *100
+
+    print(f"Your {type} is {per}% income.") 
