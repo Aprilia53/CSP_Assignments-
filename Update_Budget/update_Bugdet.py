@@ -3,19 +3,19 @@ print("This is the bugdet calculator!\n")
 def answer(input):
     question = float(input(f"what is your monthly {input}?")) 
 
-   
-
     return question 
-
-answer("income", input )  
-answer("rent" , input )  
-answer("utilities" , input )  
-answer("groceries" , input )  
-answer("transportation", input)  
+ 
 
 
-savings = income *.2
-expences = rent+utilities+groceries+transportation *.2
+income = answer("income")
+rent = answer("rent")
+utilities = answer("utilities")
+groceries = answer("groceries")
+transportation = answer("transportation") 
+
+
+savings = income *.2 
+expences = rent+utilities+groceries+transportation *.2 
 spending = income-expences-savings*.2 
 
 def percent(type, amount): 
