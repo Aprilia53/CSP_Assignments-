@@ -1,36 +1,26 @@
-print("This is a budget calculator. What is your monthly income?") 
-income = input() 
-print("your monthly income is", income ) 
-print("How much is your rent each month? ")
-rent = input() 
-print("How much is your utilities each month?")
-utilities = input() 
-print("What is your monthly grocery price?") 
-groceries = input() 
-print("What is your monthly transportation price?") 
-transportation = input() 
+print("This is the bugdet calculator!\n")
+income=float(input("what is your monthly income? "))
+rent=float(input("what is your monthly rent? "))
+utilities=float(input("what is your monthly utilities? "))
+groceries=float(input("what is your monthly groceries? "))
+transportation=float(input("what is your monthly transportation? ")) 
+savings = income *.2
+expences = rent+utilities+groceries+transportation *.2
+spending = income-expences-savings*.2 
 
-
-
-expenses = float(rent) + float(utilities) + float(groceries) + float(transportation)
-print("your monthly expences are ", expenses)
-savings = income*(0.3) 
-print("your savings are", savings  (" percent of your monthly income") )
-spendingMoney = income*(0.1) 
-print("your spending money is", spendingMoney  (" percent of your monthly income") )
-Rent = income*(0.2) 
-print("your rent are", rent  (" percent of your monthly income") )
-Utilities = income*(0.2)
-print("your utilities are", Utilities  (" percent of your monthly income") )
-Groceries = income*(0.1)
-print("your groceries are", Groceries  (" percent of your monthly income") )
-Transportation = income*(0.1)
-print("your transportation cost is", savings  (" percent of your monthly income") )
-Expences = float(income) - float(expenses) 
-print("your expences are", Expences ("percent of your monthly income. ") )
-print("Thank you for using budget calculator!")
-
-def percent(type, amount):
+def percent(type, amount): 
     per = amount/income *100
 
-    print(f"Your {type} is {per}% income.") 
+    return (f"Your {type} is {per}% income.")
+
+print(f"Your monthly income is ${income:.2}\n")
+print(f"Your monthly expences are ${expences:.2}\n")
+print(f"Your monthly savings is ${savings:.2}\n") 
+print(f"Your monthly spending is ${spending:.2}\n") 
+print(percent("rent", rent)) 
+print(percent("utilities", utilities))
+print(percent("groceries", groceries))
+print(percent("transportation", transportation))
+print(percent("savings", savings))
+print(percent("expences", expences))    
+
