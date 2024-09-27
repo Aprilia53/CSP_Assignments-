@@ -10,6 +10,7 @@ rent=float(input("what is your monthly rent? "))
 utilities=float(input("what is your monthly utilities? "))
 groceries=float(input("what is your monthly groceries? "))
 transportation=float(input("what is your monthly transportation? ")) 
+
 savings = income *.2
 expences = rent+utilities+groceries+transportation *.2
 spending = income-expences-savings*.2 
