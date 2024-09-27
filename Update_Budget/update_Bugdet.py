@@ -1,15 +1,18 @@
 print("This is the bugdet calculator!\n")
 
 def answer(input):
-    question = f"what is your monthly {answer}?"
+    question = float(input(f"what is your monthly {input}?")) 
 
-    return (float, input) 
+   
 
-income=float(input("what is your monthly income? "))
-rent=float(input("what is your monthly rent? "))
-utilities=float(input("what is your monthly utilities? "))
-groceries=float(input("what is your monthly groceries? "))
-transportation=float(input("what is your monthly transportation? ")) 
+    return question 
+
+answer("income", input )  
+answer("rent" , input )  
+answer("utilities" , input )  
+answer("groceries" , input )  
+answer("transportation", input)  
+
 
 savings = income *.2
 expences = rent+utilities+groceries+transportation *.2
