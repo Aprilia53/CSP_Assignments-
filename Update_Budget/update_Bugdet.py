@@ -1,9 +1,9 @@
 print("This is the bugdet calculator!\n")
 
-def percent(type):
-    per = input 
+def answer(input):
+    question = f"what is your monthly {answer}?"
 
-    return (f"what is your monthly {per}?")
+    return (float, input) 
 
 income=float(input("what is your monthly income? "))
 rent=float(input("what is your monthly rent? "))
