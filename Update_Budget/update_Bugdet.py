@@ -7,12 +7,11 @@ def answer(input):
  
 
 
-income = answer("income")
-rent = answer("rent")
-utilities = answer("utilities")
-groceries = answer("groceries")
-transportation = answer("transportation") 
-
+income=input() 
+rent=input() 
+utilities=input()
+groceries=input()
+transportation=input() 
 
 savings = income *.2 
 expences = rent+utilities+groceries+transportation *.2 
