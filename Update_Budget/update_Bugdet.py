@@ -10,7 +10,7 @@ def answer(userInput):
 income=answer("income") 
 rent=answer("rent") 
 utilities=answer("utilities")
-groceries=answer("groceries")
+groceries=answer("groceries") 
 transportation=answer("transportation") 
 
 savings = income *.2 

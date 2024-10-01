@@ -1,7 +1,6 @@
-age = 19
-voter = "yes" 
+age = 19 
 
-if age >= 18 and voter == "yes":
+if age >= 18:
   print("You are able to vote!") 
 
 elif age >= 16:
