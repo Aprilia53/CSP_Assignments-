@@ -13,4 +13,4 @@ int main(void){
         printf("Sorry, you are not old enough to go to school.\n");
     };
     return 0;  
-}
+} 
