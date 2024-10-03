@@ -1,5 +1,10 @@
-import datetime 
+hour = 19 
 
-currenttime = datetime.datetime.now()
+if hour < 12:
+  print("Good morning!") 
 
-print(currenttime.hour) 
+elif hour < 18:
+  print("Good Afternoon!") 
+
+else: 
+  print("Good Evening!")
