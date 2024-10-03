@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>  
-int main(){
+int main(void){
    char nameOne[40];
    printf("what is your name?: \n");
    scanf("%s", nameOne);
@@ -11,7 +11,7 @@ int main(){
    strcpy(outcome, decor);
    strcat(outcome, nameOne);
    strcat(outcome, decor);
-   printf(outcome);
+   printf("%s", outcome);
    
 
 
