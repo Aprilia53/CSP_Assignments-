@@ -2,8 +2,9 @@
 #include <string.h>
 int i; 
 int usr;
-char one;
-char two;
+char one[50];
+char two[50];
+char three[49];
 int main() {
     printf("Give me a number");
     scanf("%d", &usr); 
@@ -11,18 +12,18 @@ int main() {
     scanf("%s", &one); 
     printf("Give me another short word!\n");
     scanf("%s", &two); 
+    strcat(three, one);
+    strcat(three, two); 
     //loop that counts to 50
   for(i=0;i<=usr;i++){
         
         //replace #'s divisable by 3 and 5 with "fizzbuzz"
     if(i%3==0 && i%5==0){
-        strcat(one,two);
-        printf("%s\n", one);
+        printf("%s\n", three);
 
-    }else if (i%3==0){ 
-        
         //replace #'s divisable by 3 with "Fizz"
-       printf("%s\n", two);
+    }else if (i%3==0){ 
+        printf("%s\n", one); 
     }else if(i%5==0){
         
         //replace #'s divisable by 5 with "buzz"
