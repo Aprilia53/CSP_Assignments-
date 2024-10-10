@@ -2,7 +2,7 @@
 int i;
 int usr;
 int main() {
-    print("Give me a number");
+    printf("Give me a number");
     scanf("%d", &usr); 
     //loop that counts to 50
   for(i=0;i<=usr;i++){
@@ -20,4 +20,4 @@ int main() {
     printf("%d\n", i); 
     } 
    } return 0;
-}
+} 
