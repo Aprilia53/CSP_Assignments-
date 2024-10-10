@@ -1,8 +1,11 @@
 #include <stdio.h> 
 int i;
+int usr;
 int main() {
+    print("Give me a number");
+    scanf("%d", &usr); 
     //loop that counts to 50
-  for(i=0;i<=50;i++){
+  for(i=0;i<=usr;i++){
         //replace #'s divisable by 3 and 5 with "fizzbuzz"
     if(i%3==0 && i&5==0){
         printf("FizzBuzz\n ");
